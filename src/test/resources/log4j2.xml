@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration name= "Thread Logger" status="WARN">
+<Appenders>
+		<CustomFileThreadAppender
+			name="CustomThreadAppender">
+			<PatternLayout pattern="%d, %p, %m%n"/>
+		</CustomFileThreadAppender>
+	</Appenders>
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="CustomThreadAppender" />
+		</Root>
+	</Loggers>
+</Configuration>
